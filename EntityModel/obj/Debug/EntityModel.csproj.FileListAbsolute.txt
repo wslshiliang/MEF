@@ -1,0 +1,11 @@
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityModel.dll
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityModel.pdb
+D:\OpenProject\WYQ\EntityModel\obj\Debug\EntityModel.csproj.CoreCompileInputs.cache
+D:\OpenProject\WYQ\EntityModel\obj\Debug\EntityModel.dll
+D:\OpenProject\WYQ\EntityModel\obj\Debug\EntityModel.pdb
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityModel.dll.config
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityFramework.dll
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityFramework.xml
+D:\OpenProject\WYQ\EntityModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\OpenProject\WYQ\EntityModel\obj\Debug\EntityModel.csproj.CopyComplete

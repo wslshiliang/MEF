@@ -1,0 +1,12 @@
+D:\OpenProject\WYQ\DAL\bin\Debug\DAL.dll
+D:\OpenProject\WYQ\DAL\bin\Debug\DAL.pdb
+D:\OpenProject\WYQ\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\OpenProject\WYQ\DAL\obj\Debug\DAL.dll
+D:\OpenProject\WYQ\DAL\obj\Debug\DAL.pdb
+D:\OpenProject\WYQ\DAL\bin\Debug\EntityModel.dll
+D:\OpenProject\WYQ\DAL\bin\Debug\EntityModel.pdb
+D:\OpenProject\WYQ\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\OpenProject\WYQ\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\OpenProject\WYQ\DAL\bin\Debug\EntityFramework.dll
+D:\OpenProject\WYQ\DAL\bin\Debug\EntityModel.dll.config
+D:\OpenProject\WYQ\DAL\bin\Debug\EntityFramework.xml
