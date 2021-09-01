@@ -17,7 +17,20 @@ namespace WYQ.UI
     {
         public string Get()
         {
-          return  CardsMEF.GetData();
+            string str = string.Empty;
+            //CardsMEF pro = new CardsMEF();
+            //BaseComposeMEF baseCompose = new BaseComposeMEF();
+            //baseCompose.Compose();
+            //if (baseCompose.t != null)
+            //{
+            //    foreach (var c in pro.cards)
+            //    {
+            //        str += c.GetCountInfo();
+            //    }
+            //}
+          //  str = CardsMEF.GetData();
+            return str;
+           // return  CardsMEF.GetData();
         }
  
 

@@ -51,15 +51,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sys\BaseModel.Action.cs" />
+    <Compile Include="Sys\BaseModel.cs" />
+    <Compile Include="Sys\Base_Configuration.cs" />
     <Compile Include="CountryConfiguration.cs" />
     <Compile Include="CountryModel.cs" />
     <Compile Include="DemoModel.cs" />
     <Compile Include="DemoModelConfiguration.cs" />
+    <Compile Include="Sys\DepartConfiguration.cs" />
+    <Compile Include="Sys\DepartModel.cs" />
+    <Compile Include="Sys\DictionaryConfiguration.cs" />
+    <Compile Include="Sys\DictionaryModel.cs" />
+    <Compile Include="Sys\ModuleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\RoleConfiguration.cs" />
+    <Compile Include="Sys\RoleModel.cs" />
+    <Compile Include="Sys\ModuleConfiguration.cs" />
+    <Compile Include="Sys\RoleModuleConfiguration.cs" />
+    <Compile Include="Sys\RoleModuleModel.cs" />
+    <Compile Include="Sys\UserConfiguration.cs" />
+    <Compile Include="Sys\UserModel.cs" />
+    <Compile Include="Sys\UserRoleConfiguration.cs" />
+    <Compile Include="Sys\UserRoleModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <Compile Include="Sys\UserModel.Action.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WYQ\Enums\Enums.csproj">
+      <Project>{AE3B6F22-137F-4A2D-8757-232C49293BFE}</Project>
+      <Name>Enums</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

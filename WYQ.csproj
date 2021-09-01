@@ -114,16 +114,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MEF\BaseComposeMEF.cs" />
+    <Compile Include="MEF\MEF.cs" />
     <Compile Include="MEF\BaseIEnumberableMEF.cs" />
     <Compile Include="MEF\BaseMEF.cs" />
     <Compile Include="MEF\CardsMEF.cs" />
     <Compile Include="MEF\TestMEF.cs" />
     <Compile Include="UI\CardsController.cs" />
+    <Compile Include="UI\Sys\DictionaryController.cs" />
     <Compile Include="UI\TestController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartupAppBuilder.cs" />
+    <Compile Include="UI\Sys\UserController.cs" />
     <Compile Include="WebApiExceptionFilterAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +145,10 @@
     <ProjectReference Include="EntityModel\EntityModel.csproj">
       <Project>{9F11B599-4DCC-4EC0-B97F-D6A2027A114D}</Project>
       <Name>EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utility\Utility.csproj">
+      <Project>{BD3A34B0-92CF-4E4E-A8F6-B12D3E3B75F2}</Project>
+      <Name>Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

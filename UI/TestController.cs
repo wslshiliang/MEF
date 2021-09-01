@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using DAL;
+using EntityModel;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +18,8 @@ namespace WYQ.UI
     /// </summary>
     public class TestController : System.Web.Http.ApiController
     {
+        
+
         public string Get() 
         {
             return "WepApi connect success"; 
@@ -22,8 +27,16 @@ namespace WYQ.UI
 
         public string Get(int id)
         {
-           var res= TestMEF.GetData(id);
-            return JsonConvert.SerializeObject(res);
+            DemoModel demoClass = new DemoModel();
+            MEF<ITest> baseCompose = new MEF<ITest>();
+            baseCompose.Compose();
+            if (baseCompose.call != null)
+            {
+                demoClass = baseCompose.call.GetData(id);
+            }
+
+           // var res= TestMEF.GetData(id);
+            return JsonConvert.SerializeObject(demoClass);
         }
  
 

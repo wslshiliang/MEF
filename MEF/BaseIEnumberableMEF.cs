@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace WYQ.MEF
 {
-   public  class BaseIEnumberableMEF<T> : BaseComposeMEF where T : DAL.IBase
-    {
-        [ImportMany]
-        public IEnumerable<T> cards { get; set; } 
-    }
+   //public  class BaseIEnumberableMEF<T> : BaseComposeMEF where T : DAL.IBase
+   // {
+   //     [ImportMany]
+   //     public IEnumerable<T> cards { get; set; } 
+   // }
 }

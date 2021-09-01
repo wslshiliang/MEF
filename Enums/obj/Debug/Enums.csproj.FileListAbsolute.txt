@@ -1,0 +1,6 @@
+D:\OpenProject\WYQ\Enums\bin\Debug\Enums.dll
+D:\OpenProject\WYQ\Enums\bin\Debug\Enums.pdb
+D:\OpenProject\WYQ\Enums\obj\Debug\Enums.csproj.CoreCompileInputs.cache
+D:\OpenProject\WYQ\Enums\obj\Debug\Enums.dll
+D:\OpenProject\WYQ\Enums\obj\Debug\Enums.pdb
+D:\OpenProject\WYQ\Enums\obj\Debug\Enums.csprojAssemblyReference.cache

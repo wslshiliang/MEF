@@ -5,6 +5,9 @@
     <title></title>
 </head>
 <body>
+    <input id="uid" value=""/>
+    <input id="pwd" value=""/>
+
     <button onclick="add()">Add</button>
 
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
@@ -12,13 +15,14 @@
         function add() { 
             $.ajax({
                 type: "post",
-                url: "http://localhost:9000/api/test",
+                url: "http://localhost:9000/api/Dictionary/GetDictEx",
                 contentType: "application/json",
-                data:  JSON.stringify({ id: "100" }) , 
-                success: function (data, status) {
-                    if (status == "success") {
-                        alert(data);
+                data: JSON.stringify({ secType: 'DictType'}) , 
+                success: function (data) {
+                    if (data.isOk) {
+                        
                     }
+                    alert(data.errMsg);
                 }
             });
         }

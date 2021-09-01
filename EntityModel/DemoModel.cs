@@ -1,15 +1,13 @@
-﻿using System;
+﻿using EntityModel.Sys;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityModel
 {
     [Table("W_DemoClass")]
-    public class DemoModel
-    {
-        [Column("Id")] 
-        [Key]
-        public int Id { get; set; }
+    public class DemoModel:BaseModel
+    { 
         public string Name { get; set; }
         public Nullable<int> Age { get; set; }
 

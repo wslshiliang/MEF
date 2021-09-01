@@ -1,11 +1,15 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 
 namespace WYQ.MEF
 {
-    public  class BaseComposeMEF
+    public  class MEF<T> where T: IBase
     {
+        [Import]
+        public T call { get; set; }
+
         public void Compose()
         {
             try

@@ -6,9 +6,9 @@ using System.Reflection;
 
 namespace WYQ.MEF
 {
-    public class BaseMEF<T> : BaseComposeMEF where T: DAL.IBase
-    {
-        [Import]
-        public T test { get; set; } 
-    }
+    //public class BaseMEF<T> : BaseComposeMEF where T: DAL.IBase
+    //{
+    //    [Import]
+    //    public T t { get; set; } 
+    //}
 }

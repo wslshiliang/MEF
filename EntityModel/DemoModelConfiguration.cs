@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-   public class DemoModelConfiguration : EntityTypeConfiguration<DemoModel>
+   public class DemoModelConfiguration : Base_Configuration<DemoModel>
     {
         public DemoModelConfiguration() 
         { 

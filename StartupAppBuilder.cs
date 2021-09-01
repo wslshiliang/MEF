@@ -52,6 +52,10 @@ namespace WYQ
             var cors = new System.Web.Http.Cors.EnableCorsAttribute("*", "*", "*");   //解决跨域
             config.EnableCors(cors);
 
+            // 启用Web API特性路由
+            config.MapHttpAttributeRoutes();
+
+            //默认路由
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
