@@ -59,9 +59,12 @@
     <Compile Include="DemoModel.cs" />
     <Compile Include="DemoModelConfiguration.cs" />
     <Compile Include="Sys\DepartConfiguration.cs" />
+    <Compile Include="Sys\DepartModel.Action.cs" />
     <Compile Include="Sys\DepartModel.cs" />
     <Compile Include="Sys\DictionaryConfiguration.cs" />
+    <Compile Include="Sys\DictionaryModel.Action.cs" />
     <Compile Include="Sys\DictionaryModel.cs" />
+    <Compile Include="Sys\ModuleModel.Action.cs" />
     <Compile Include="Sys\ModuleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sys\RoleConfiguration.cs" />

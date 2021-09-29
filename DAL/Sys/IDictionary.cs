@@ -11,5 +11,13 @@ namespace DAL.Sys
         dynamic GetDictEx(string secType, bool isUsed =true);
 
         dynamic GetDictionaryAllEx();
+
+        dynamic AddDictionaryEx(string uName, dynamic args);
+
+        dynamic GetDictionaryByIdEx(string id);
+
+        dynamic ChangeDictionaryEx(string uName, dynamic args);
+
+        dynamic DeleteDictionaryEx(string uName, string id);
     }
 }

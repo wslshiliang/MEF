@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel.Sys
 {
-   public class DepartModel:BaseModel
+   public partial class DepartModel:BaseModel
     {
         /// <summary>
         /// 部门名称

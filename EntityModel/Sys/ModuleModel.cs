@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel.Sys
 {
-  public  class ModuleModel:BaseModel
+  public partial class ModuleModel:BaseModel
     {
         public int? ParentId { get; set; }
         public string Icon { get; set; }
@@ -22,7 +22,11 @@ namespace EntityModel.Sys
         /// <summary>
         /// 路由组件
         /// </summary>
-        public string RouteComponent { get; set; }
+        public string RouteComponent { get; set; } 
+        /// <summary>
+        /// 是否路由缓存
+        /// </summary>
+        public bool RouteCache { get; internal set; }
         /// <summary>
         /// 路由地址
         /// </summary>

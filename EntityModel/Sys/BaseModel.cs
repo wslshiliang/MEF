@@ -15,7 +15,7 @@ namespace EntityModel.Sys
         /// <summary>
         /// 是否可用 true代表此条数据可用， FALSE代表此条数据不在可用
         /// </summary>
-        public bool IsUsed { get; internal set; }
+        public bool IsUsed { get; internal set; } 
         /// <summary>
         /// 创建人信息，建议使用UserName
         /// </summary>

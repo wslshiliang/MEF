@@ -9,7 +9,7 @@ namespace WYQ
         { 
                 try
                 {
-                     DB.MySqlConncetion.ConnectTest();
+                    DB.MySqlConncetion.ConnectTest();
 
                     string apiPort = ConfigurationSettings.AppSettings["ApiPort"].ToString();
                     string serverURL = $"http://localhost:{apiPort}/";

@@ -38,5 +38,70 @@ namespace WYQ.UI.Sys
             return result;
         }
 
+        [Route("api/Dictionary/AddDictionaryEx")]
+        [HttpPost]
+        public dynamic AddDictionaryEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic);
+            string uName = args.uName;
+
+            MEF<IDictionary> mef = new MEF<IDictionary>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.AddDictionaryEx(uName,args);
+            }
+            return result;
+        }
+
+        [Route("api/Dictionary/GetDictionaryByIdEx")]
+        [HttpPost]
+        public dynamic GetDictionaryByIdEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic);
+            string id = args.Id;
+
+            MEF<IDictionary> mef = new MEF<IDictionary>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.GetDictionaryByIdEx(id);
+            }
+            return result;
+        }
+
+        [Route("api/Dictionary/ChangeDictionaryEx")]
+        [HttpPost]
+        public dynamic ChangeDictionaryEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic);
+            string uName = args.uName;
+
+            MEF<IDictionary> mef = new MEF<IDictionary>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.ChangeDictionaryEx(uName, args);
+            }
+            return result;
+        }
+
+        [Route("api/Dictionary/DeleteDictionaryEx")]
+        [HttpPost]
+        public dynamic DeleteDictionaryEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic);
+            string uName = args.uName;
+            string id = args.Id;
+
+            MEF<IDictionary> mef = new MEF<IDictionary>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.DeleteDictionaryEx(uName, id);
+            }
+            return result;
+        }
+
     }
 }

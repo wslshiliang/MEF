@@ -23,6 +23,7 @@ namespace EntityModel.Sys
             Property(p => p.RouteName).HasColumnName("F_ROUTENAME").HasMaxLength(50);
             Property(p => p.RoutePath).HasColumnName("F_ROUTEPATH").HasMaxLength(50);
             Property(p => p.RouteComponent).HasColumnName("F_ROUTECOMPONENT").HasMaxLength(50);
+            Property(p => p.RouteCache).HasColumnName("F_ROUTECACHE").IsRequired();
             HasOptional(p => p.Parent).WithMany(p => p.Childs).HasForeignKey(p => p.ParentId).WillCascadeOnDelete(false);
         }
     }

@@ -25,7 +25,7 @@
           public virtual DbSet<DemoModel> DemoClasses { get; set; }
           public virtual DbSet<CountryModel> Country { get; set; }
           public virtual DbSet<UserModel> User { get; set; }
-          public virtual DbSet<DepartModel> Depart { get; set; }
+          public virtual DbSet<DepartModel> DepartDb { get; set; }
           public virtual DbSet<RoleModel> Role { get; set; }
           public virtual DbSet<UserRoleModel> UserRole { get; set; }
           public virtual DbSet<ModuleModel> Module { get; set; }

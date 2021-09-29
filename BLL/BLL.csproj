@@ -58,6 +58,8 @@
     <Compile Include="NHCard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sys\DictionaryBLL.cs" />
+    <Compile Include="Sys\DepartmentBLL.cs" />
+    <Compile Include="Sys\ModuleBLL.cs" />
     <Compile Include="Sys\UserBLL.cs" />
     <Compile Include="TestBLL.cs" />
     <Compile Include="ZHCard.cs" />

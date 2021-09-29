@@ -11,13 +11,14 @@
     <button onclick="add()">Add</button>
 
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
         function add() { 
+            let dat = { page :{ Pagesize: 9999 }, secType : "ValueType", isUsed : 1, token : "9a259870796d4fbca174790710c131ff", uName: "admin" };
             $.ajax({
                 type: "post",
                 url: "http://localhost:9000/api/Dictionary/GetDictEx",
                 contentType: "application/json",
-                data: JSON.stringify({ secType: 'DictType'}) , 
+                data: JSON.stringify(dat), 
                 success: function (data) {
                     if (data.isOk) {
                         

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DB
 {
      public class BaseDal<T> where T : BaseModel
-    {
+    { 
         static MySqlModel db
         {
             get
@@ -30,15 +30,12 @@ namespace DB
 
 
         static MySqlModel _Context;
-        static BaseDal()
-        {
-            _Context = db;
-        }
+        
         public static MySqlModel Context
         {
             get
-            {
-                return _Context;
+            {  
+                 return _Context = db;
             }
         }
 
@@ -63,10 +60,27 @@ namespace DB
         /// <summary>
         /// 删除
         /// </summary> 
-        public bool Remove(T t)
+        public void Remove(T t)
         {
-            Context.Set<T>().Remove(t);
-            return true;
+            Context.Set<T>().Remove(t); 
+        }
+
+        public int Commit()
+        {
+           return Context.SaveChanges(); 
+        }
+
+        public static DbContext GetCurrentDbContext()
+        {
+            var fullName = typeof(MySqlModel).FullName;
+            DbContext dbContext = System.Runtime.Remoting.Messaging.CallContext.GetData(fullName) as DbContext;
+
+            if (dbContext == null)
+            {
+                dbContext = new MySqlModel();
+                System.Runtime.Remoting.Messaging.CallContext.SetData(fullName, dbContext);
+            }
+            return dbContext;
         }
     }
 }

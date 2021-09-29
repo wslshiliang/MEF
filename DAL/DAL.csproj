@@ -45,6 +45,8 @@
     <Compile Include="ICard.cs" />
     <Compile Include="ITest.cs" />
     <Compile Include="Sys\IDictionary.cs" />
+    <Compile Include="Sys\IDepartment.cs" />
+    <Compile Include="Sys\IModule.cs" />
     <Compile Include="Sys\IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
