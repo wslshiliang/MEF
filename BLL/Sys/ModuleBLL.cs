@@ -20,7 +20,7 @@ namespace BLL.Sys
             string idx = args.Idx;
             string icon = args.Icon;
             E_ModuleType moduleType = args.ModuleType;
-            int? parentId = args.ParentId;
+            int? parentId = args.ParentId == 0 ? null : args.ParentId;
             bool routeCache = args.RouteCache;
             string routeComponent = args.RouteComponent;
             string routeName = args.RouteName;
@@ -28,8 +28,8 @@ namespace BLL.Sys
             string targetType = args.TargetType;
             string url = args.Url;
             string remark = args.Remark;
-            string crtUser= args.userName;
-
+            string crtUser= args.uName;
+             
             ModuleModel module = new ModuleModel(name, isUsed, idx, icon, moduleType, parentId, routeCache, routeComponent, routeName, routePath, targetType, url, crtUser, remark);
             base.Add(module);
             var res = base.Commit();
