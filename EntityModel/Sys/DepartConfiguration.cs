@@ -15,6 +15,7 @@ namespace EntityModel.Sys
             ToTable("SYS_DEPART");
             Property(p => p.Name).HasMaxLength(50).IsRequired().HasColumnName("F_DEPARTNAME");
             Property(p => p.Leader).HasMaxLength(50).HasColumnName("F_LEADER");
+            Property(p => p.ParentDepartId).HasColumnName("F_PARENTDEPARTID");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel.Sys
 {
-  public  class RoleModuleModel:BaseModel
+  public partial class RoleModuleModel:BaseModel
     {
         public int RoleId { get; private set; }
         public virtual RoleModel Role { get; private set; }

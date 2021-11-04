@@ -10,7 +10,7 @@ namespace DAL.Sys
     {
         dynamic GetDictEx(string secType, bool isUsed =true);
 
-        dynamic GetDictionaryAllEx();
+        dynamic GetDictionaryAllEx(dynamic args);
 
         dynamic AddDictionaryEx(string uName, dynamic args);
 

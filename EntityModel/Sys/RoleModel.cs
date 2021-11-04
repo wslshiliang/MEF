@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel.Sys
 {
-   public class RoleModel:BaseModel
+   public partial class RoleModel:BaseModel
     {
         /// <summary>
         /// 角色名

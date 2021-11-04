@@ -84,13 +84,14 @@ namespace WYQ.UI.Sys
         public dynamic DeleteDepartEx([FromBody] dynamic args)
         {
             dynamic result = default(dynamic); 
-            int id = args.Id; 
+            int id = args.Id;
+            string uName = args.uName;
 
             MEF<IDepartment> mef = new MEF<IDepartment>();
             mef.Compose();
             if (mef.call != null)
             {
-                result = mef.call.DeleteDepartEx(id);
+                result = mef.call.DeleteDepartEx(id, uName);
             }
             return result;
         }

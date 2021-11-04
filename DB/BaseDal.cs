@@ -75,7 +75,7 @@ namespace DB
             var fullName = typeof(MySqlModel).FullName;
             DbContext dbContext = System.Runtime.Remoting.Messaging.CallContext.GetData(fullName) as DbContext;
 
-            if (dbContext == null)
+            if (dbContext == null) 
             {
                 dbContext = new MySqlModel();
                 System.Runtime.Remoting.Messaging.CallContext.SetData(fullName, dbContext);

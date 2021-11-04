@@ -16,6 +16,14 @@ namespace DAL.Sys
         /// 新增
         /// </summary> 
         dynamic AddModuleEx(string uName, dynamic args);
+        /// <summary>
+        /// 根据用户获取菜单权限
+        /// </summary> 
+        dynamic QueryPageModuleByUserIdEx( string userId);
+        /// <summary>
+        ///获取所有菜单的层级关系
+        /// </summary> 
+        dynamic QueryAllModuleTreeEx();
 
     }
 }

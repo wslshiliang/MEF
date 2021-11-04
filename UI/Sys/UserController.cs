@@ -9,7 +9,8 @@ namespace WYQ.UI
     public class UserController : System.Web.Http.ApiController
     {
          [Route("api/User/Login")]
-        public dynamic Post([FromBody] dynamic args)
+        [HttpPost]
+        public dynamic Login([FromBody] dynamic args)
         {
             dynamic result = default(dynamic);
             string userId = args.userId;
@@ -29,8 +30,23 @@ namespace WYQ.UI
                 result = mef.call.Login(userId, userPwd);
             }
             return  result;
-        } 
+        }
 
+        [Route("api/User/QueryUserListByDepartIdEx")]
+        [HttpPost]
+        public dynamic QueryUserListByDepartIdEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic); 
 
-    }
+            MEF<IUser> mef = new MEF<IUser>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.QueryUserListByDepartIdEx(args);
+            }
+            return result;
+        }
+ 
+
+     }
 }

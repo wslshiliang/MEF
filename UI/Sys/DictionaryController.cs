@@ -33,7 +33,7 @@ namespace WYQ.UI.Sys
             mef.Compose();
             if (mef.call != null)
             {
-                result = mef.call.GetDictionaryAllEx();
+                result = mef.call.GetDictionaryAllEx(args);
             }
             return result;
         }

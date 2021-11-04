@@ -10,10 +10,11 @@ namespace EntityModel.Sys
     {
         public DepartModel() : base() { }
 
-        public DepartModel(string name, string learder, string userName, string remark = "") : base(userName, remark)
+        public DepartModel(string name, string learder,int? parentDepartId,  string userName, string remark = "") : base(userName, remark)
         {
             this.Name = name;
             this.Leader = learder;
+            this.ParentDepartId = parentDepartId;
         }
 
         public void UpdateModel(string name, string learder, bool isUsed, string userName, string remark = "") 

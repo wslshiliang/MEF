@@ -17,6 +17,8 @@ namespace EntityModel.Sys
         /// 负责人
         /// </summary>
         public string Leader { get; private set; }
+         
+        public int? ParentDepartId { get; private set; }
 
         /// <summary>
         /// 用户

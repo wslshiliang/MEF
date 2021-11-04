@@ -60,6 +60,8 @@
     <Compile Include="Sys\DictionaryBLL.cs" />
     <Compile Include="Sys\DepartmentBLL.cs" />
     <Compile Include="Sys\ModuleBLL.cs" />
+    <Compile Include="Sys\RoleBLL.cs" />
+    <Compile Include="Sys\RoleModuleBLL.cs" />
     <Compile Include="Sys\UserBLL.cs" />
     <Compile Include="TestBLL.cs" />
     <Compile Include="ZHCard.cs" />

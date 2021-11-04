@@ -33,6 +33,6 @@ namespace DAL
         /// 删除
         /// </summary> 
 
-        dynamic DeleteDepartEx(int id);
+        dynamic DeleteDepartEx(int id, string uName);
     }
 }

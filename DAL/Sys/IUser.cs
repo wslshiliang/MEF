@@ -8,6 +8,14 @@ namespace DAL
 {
   public  interface IUser : IBase
     {
+        /// <summary>
+        /// 登陆
+        /// </summary>
         dynamic Login(string userId, string userPwd);
+
+        /// <summary>
+        /// 查询
+        /// </summary>
+        dynamic QueryUserListByDepartIdEx(dynamic args);
     }
 }

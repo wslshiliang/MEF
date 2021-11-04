@@ -1,9 +1,9 @@
 D:\OpenProject\WYQ\Utility\bin\Debug\Utility.dll
 D:\OpenProject\WYQ\Utility\bin\Debug\Utility.pdb
-D:\OpenProject\WYQ\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
-D:\OpenProject\WYQ\Utility\obj\Debug\Utility.dll
-D:\OpenProject\WYQ\Utility\obj\Debug\Utility.pdb
 D:\OpenProject\WYQ\Utility\bin\Debug\Enums.dll
 D:\OpenProject\WYQ\Utility\bin\Debug\Enums.pdb
 D:\OpenProject\WYQ\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+D:\OpenProject\WYQ\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
 D:\OpenProject\WYQ\Utility\obj\Debug\Utility.csproj.CopyComplete
+D:\OpenProject\WYQ\Utility\obj\Debug\Utility.dll
+D:\OpenProject\WYQ\Utility\obj\Debug\Utility.pdb

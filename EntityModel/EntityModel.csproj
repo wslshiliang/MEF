@@ -68,9 +68,11 @@
     <Compile Include="Sys\ModuleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sys\RoleConfiguration.cs" />
+    <Compile Include="Sys\RoleModel.Action.cs" />
     <Compile Include="Sys\RoleModel.cs" />
     <Compile Include="Sys\ModuleConfiguration.cs" />
     <Compile Include="Sys\RoleModuleConfiguration.cs" />
+    <Compile Include="Sys\RoleModuleModel.Action.cs" />
     <Compile Include="Sys\RoleModuleModel.cs" />
     <Compile Include="Sys\UserConfiguration.cs" />
     <Compile Include="Sys\UserModel.cs" />

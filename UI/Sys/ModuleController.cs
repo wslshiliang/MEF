@@ -46,7 +46,37 @@ namespace WYQ.UI.Sys
             return result;
         }
 
+        [Route("api/Module/QueryPageModuleByUserIdEx")]
+        [HttpPost]
+        public dynamic QueryPageModuleByUserIdEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic);
+            string userId = args.userId;
 
+            MEF<IModule> mef = new MEF<IModule>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.QueryPageModuleByUserIdEx( userId);
+            }
+            return result;
+        }
+
+        [Route("api/Module/QueryAllModuleTreeEx")]
+        [HttpPost]
+        public dynamic QueryAllModuleTreeEx([FromBody] dynamic args)
+        {
+            dynamic result = default(dynamic);
+            string userId = args.userId;
+
+            MEF<IModule> mef = new MEF<IModule>();
+            mef.Compose();
+            if (mef.call != null)
+            {
+                result = mef.call.QueryAllModuleTreeEx();
+            }
+            return result;
+        }
 
     } 
 }

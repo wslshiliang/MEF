@@ -44,5 +44,46 @@ namespace BLL.Sys
                 } 
             }
         }
+
+        public dynamic QueryUserListByDepartIdEx(dynamic args)
+        {
+            string uId = args.model.UserId;
+
+            string isUsed = args.model.IsUsed;
+            int page = args.page.Page;
+            int pagesize = args.page.Pagesize;
+
+            var sPage = (page - 1) * pagesize;
+            var tPage = page * pagesize;
+            bool used = true;
+            if (isUsed != "-1" && isUsed != null) used = isUsed == "1" ? true : false;
+
+            var linq = from a in Context.User
+                       where (string.IsNullOrEmpty(uId) == true ? true : a.UserId.Contains(uId))
+                       && ((isUsed == "-1" || isUsed == null) ? true : a.IsUsed == used)
+                       select new { 
+                           a.Id,
+                           a.UserId,
+                           a.UserName,
+                           a.MPhone,
+                           a.Address,
+                           a.IsOnLine,
+                           a.Remark,
+                           a.IsUsed,
+                           a.CrtUser,
+                           a.CrtTime,
+                           a.EdtUser,
+                           a.EdtTime,
+                       };
+
+            var res = linq.AsEnumerable().OrderBy(c => c.Id).Skip(sPage).Take(tPage).ToList();
+            var total = linq.Count();
+
+            return Ret<dynamic>.Success(new
+            {
+                list = res,
+                page = new { total_count = total }
+            });
+        }
     }
 }
